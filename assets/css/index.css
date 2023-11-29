@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 1rem 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.project {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+.skillLogo{
+    width: 50px;
+}
+#profilePic{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px black solid;
+}
+#logo{
+    width: 100px;
+    border-radius: 50%;
+    padding-inline: 1rem;
+}
+header a{
+
+    font-size: 1.5rem;
+    color: #333;
+    padding-right: 1rem;
+}
+header a:hover {
+    transform: scale(1.6);
+    transition: ease-in-out 0.7s;
+}
+body.dark-theme, header.dark-theme {
+    background-color: #333;
+    color:white;
+   
+}
+.skill-item{
+    transition: ease 0.7s;
+
+}
+.skill-item:hover {
+    transform: scale(1.5) rotate(360deg);
+    transition: ease 0.7s;
+    color: red;
+}
