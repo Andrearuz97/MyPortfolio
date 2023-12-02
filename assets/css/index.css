@@ -63,8 +63,13 @@ header a{
 header a:hover {
     transform: scale(1.6);
     transition: ease-in-out 0.7s;
+    color:blue
 }
-body.dark-theme, header.dark-theme {
+#theme-switcher{
+    background-color: white;
+}
+
+body.dark-theme, header.dark-theme #theme-switcher {
     background-color: #333;
     color:white;
    
@@ -78,3 +83,38 @@ body.dark-theme, header.dark-theme {
     transition: ease 0.7s;
     color: red;
 }
+@keyframes gyroRotateX {
+    0% {
+      transform: rotatey(0deg);
+    }
+    50% {
+      transform: rotatey(180deg);
+    }
+    100% {
+      transform: rotatey(360deg);
+    }
+  }
+  
+  #fullStack {
+    display: inline-block; 
+    animation: gyroRotateX 10s linear infinite;
+    transform-style: preserve-3d;
+    perspective: 500px; 
+    color: purple;  }
+  
+  
+  .contatti a{
+    color: white;
+    text-decoration: none;
+  }
+  .contatti i{
+    font-size: 1.3rem;
+    margin-right: 0.2rem;
+    transition: ease 1s;
+  }
+  .contatti i:hover{
+    transform: scale(1.4);
+    transition: ease 1s;
+    color: green;
+  }
+  

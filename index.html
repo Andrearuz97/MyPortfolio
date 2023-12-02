@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
-    crossorigin="anonymous">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
 
     <title>Portfolio Andrea Ruzittu</title>
@@ -30,7 +29,7 @@
                 <option value="en">English</option>
             </select>
             <!-- Cambio Tema -->
-            <button id="theme-switcher" class="btn btn-secondary">Cambia Tema</button>
+            <button id="theme-switcher"><i class="fa-regular fa-moon"></i></button>
         </div>
         
     </header>
@@ -43,7 +42,7 @@
             </div>
             <div class="col-md-6 text-center mt-5">
                 <h1>Hello, i'm Andrea Ruzittu</h1>
-                <h2>FULL-STACK DEVELOPER </h2>
+                <h2 id="fullStack">FULL-STACK DEVELOPER </h2>
             </div>
         </div>
         <div class="row d-flex justify-content-between">
@@ -124,25 +123,71 @@ Andrea Ruzittu</p>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Progetti</h2>
-        <div class="project">
-            <h3>Nome Progetto 1</h3>
-            <p>Descrizione del progetto...</p>
+    <h2 class="text-center">Progetti</h2>
+    <div class="container text-center my-4">
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/favicon_ER.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://github.com/Andrearuz97/EasyReservation-Angular" class="btn btn-primary">Vedi progetto</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/img/Cattura.JPG" class="progetto" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contatti</h2>
-        <p>Email: ruzittu.andrea97@gmail.com</p>
-        <!-- Aggiungi altri metodi di contatto se desiderato -->
-    </section>
-
-    <footer>
-        <p>© 2023 Andrea Ruzittu. Tutti i diritti riservati.</p>
+      </div>
+      
+    <footer class="contatti">
+            <a href="mailto:ruzittu.andrea97@gmail.com"target="_blank">
+                <i class="fas fa-envelope"></i> ruzittu.andrea97@gmail.com
+            </a>
+        </p>
+        <p>
+            <a href="tel:+393405567478" target="_blank">
+                <i class="fas fa-phone-alt"></i> 340 5567478
+            </a>
+        </p>
+        <p>
+            <a href="https://wa.me/393405567478" target="_blank">
+                <i class="fab fa-whatsapp"></i> Scrivici su Whatsapp
+            </a>
+        </p>
+        <p> 
+            <a href="https://www.google.com/maps/place/Via+Giotto+di+Bordone,+3A,+07030+Sant'Antonio+di+Gallura+SS/@40.989985,9.2999375,17z/data=!3m1!4b1!4m6!3m5!1s0x12d95160cc167047:0x7933bc3b8666f0dc!8m2!3d40.989981!4d9.3025124!16s%2Fg%2F11c5c396r7?hl=it&entry=ttu" title="Apri su Google Maps" target="_blank">
+                <i class="fa-solid fa-map-pin"></i> Via Giotto 3, Sant'Antonio di Gallura, Italia
+            </a> 
+        </p>
+        <p>© <span id="anno"></span> Andrea Ruzittu. Tutti i diritti riservati.
+        </p>
+        
     </footer>
+    </footer>
+    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js
+   "></script>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
