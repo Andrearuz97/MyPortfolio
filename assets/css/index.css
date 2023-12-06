@@ -13,9 +13,9 @@ body {
     background-size: cover; 
     
 }
-
+@media (min-width: 991px) {
 #navbarContent a{
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: black;
     transition: ease-in-out 1s;
     }
@@ -24,6 +24,20 @@ body {
         transition: ease-in-out 0.8s;
         color: blue;
     }
+}
+@media (max-width: 992px) {
+    #navbarContent a{
+        font-size: 1.5rem;
+        color: black;
+        
+        }
+        #navbarContent a:active{
+           
+            color: blue;
+        }
+
+}
+
 
 section {
     padding: 1rem 20px;
@@ -103,6 +117,7 @@ body.dark-theme, header.dark-theme #theme-switcher {
     color: white;
     text-decoration: none;
   }
+  @media (min-width: 991px) {
   .contatti i{
     font-size: 1.3rem;
     margin-right: 0.2rem;
@@ -113,6 +128,16 @@ body.dark-theme, header.dark-theme #theme-switcher {
     transition: ease 1s;
     color: green;
   }
+}
+@media (max-width: 992px) {
+    .contatti i{
+        font-size: 1.3rem;
+        margin-right: 0.2rem;
+      }
+      .contatti i:active{
+        color: green;
+      }
+}
   
     .card-img-top {
         height: 400px;
