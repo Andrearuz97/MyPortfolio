@@ -7,25 +7,30 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
+    background: linear-gradient(rgba(244, 244, 244, 0.5), rgba(244, 244, 244, 0.5)), 
+    url('../img/background\ portfolio.avif');
+    background-position: center;
+    background-size: cover; 
+    
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
+#navbarContent a{
+    font-size: 1.3rem;
+    color: black;
+    transition: ease-in-out 1s;
+    }
+    #navbarContent a:hover{
+        transform: scale(1.4);
+        transition: ease-in-out 0.8s;
+        color: blue;
+    }
 
 section {
     padding: 1rem 20px;
 }
+#aboutMe{
+font-weight: bold;
 
-h2 {
-    color: #333;
 }
 
 .project {
@@ -52,19 +57,9 @@ footer {
 #logo{
     width: 100px;
     border-radius: 50%;
-    padding-inline: 1rem;
-}
-header a{
-
-    font-size: 1.5rem;
-    color: #333;
     padding-right: 1rem;
 }
-header a:hover {
-    transform: scale(1.6);
-    transition: ease-in-out 0.7s;
-    color:blue
-}
+
 #theme-switcher{
     background-color: white;
 }
@@ -95,6 +90,7 @@ body.dark-theme, header.dark-theme #theme-switcher {
     }
   }
   
+  
   #fullStack {
     display: inline-block; 
     animation: gyroRotateX 10s linear infinite;
@@ -118,3 +114,9 @@ body.dark-theme, header.dark-theme #theme-switcher {
     color: green;
   }
   
+    .card-img-top {
+        height: 400px;
+        object-fit: cover; 
+        object-position: center; 
+    }
+    
