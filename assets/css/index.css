@@ -79,9 +79,16 @@ footer {
 }
 
 body.dark-theme, header.dark-theme #theme-switcher {
-    background-color: #333;
+    background-color: #6b6969;
     color:white;
-   
+    background-image: url(../img/bg_dark.avif);
+    background-position: center;
+      background-size: cover; 
+    .navbar, footer, i{
+      background-color:#6b6969 !important;
+      color: white !important;
+    }
+    
 }
 .skill-item{
     transition: ease 0.7s;
@@ -144,4 +151,8 @@ body.dark-theme, header.dark-theme #theme-switcher {
         object-fit: cover; 
         object-position: center; 
     }
+    .card {
+      max-width: 500px; /* o qualsiasi altra larghezza desiderata */
+      margin: 0 auto; /* Questo centra la card all'interno del suo contenitore */
+  }
     
