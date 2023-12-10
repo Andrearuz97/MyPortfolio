@@ -152,7 +152,7 @@ body.dark-theme, header.dark-theme #theme-switcher {
         object-position: center; 
     }
     .card {
-      max-width: 500px; /* o qualsiasi altra larghezza desiderata */
-      margin: 0 auto; /* Questo centra la card all'interno del suo contenitore */
+      max-width: 500px;
+      margin: 0 auto; 
   }
     
