@@ -37,7 +37,11 @@ body {
         }
 
 }
-
+#language-switcher:focus{
+  box-shadow: none !important;
+  border: none !important;  
+  outline: 2px solid green !important;
+}
 
 section {
     padding: 1rem 20px;
@@ -159,6 +163,11 @@ body.dark-theme, header.dark-theme #theme-switcher {
   .carousel-control-prev-icon::before,
   .carousel-control-next-icon::before {
       color: #ff0000 !important;
+  }
+  form input:focus, form textarea:focus{
+    border: green 1px double !important;
+    box-shadow: none !important;
+    outline: green !important;
   }
 
 
