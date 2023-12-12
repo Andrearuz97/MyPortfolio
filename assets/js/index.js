@@ -14,23 +14,20 @@ document.addEventListener('DOMContentLoaded', function () {
   
   // Chiusura NavBar
   document.addEventListener('click', function(event) {
+    // Controlla se il click è sul selettore di lingua
+    let isLanguageSwitcher = event.target.id === 'language-switcher';
+
+    // Il resto del codice rimane lo stesso
     let insideNavbar = document.querySelector('.navbar').contains(event.target);
     let isNavbarToggler = event.target.classList.contains('navbar-toggler') || event.target.closest('.navbar-toggler') != null;
     let navbarCollapse = document.querySelector('.navbar-collapse');
     let isNavbarOpen = navbarCollapse.classList.contains('show');
-    
-    // Controlla se il click è sul selettore di lingua e se il selettore di lingua è aperto
-    let isLanguageSwitcher = event.target.id === 'language-switcher' || event.target.closest('#language-switcher') != null;
-    let languageSwitcherExpanded = document.getElementById('language-switcher') === document.activeElement;
 
     // Aggiungi la condizione per il selettore di lingua qui
-    if (isNavbarOpen && !insideNavbar) {
-        if (!isLanguageSwitcher || !languageSwitcherExpanded) {
-            document.querySelector('.navbar-toggler').click();
-        }
+    if (isNavbarOpen && !insideNavbar && !isLanguageSwitcher) {
+        document.querySelector('.navbar-toggler').click();
     }
 });
-
 
 
   
