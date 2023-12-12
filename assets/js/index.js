@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
   
 
-
+    // Cambio lingua 
     document.getElementById('language-switcher').addEventListener('change', function() {
         var language = this.value;
         console.log("Lingua selezionata:", language);
@@ -42,3 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var anno= document.getElementById("anno");
     var data = new Date().getFullYear();
     anno.innerHTML = data
+
+    // Elimina dati del form 1 secodo dopo l'invio
+    document.getElementById('contactForm').addEventListener('submit', function() {
+        setTimeout(function() {
+            document.getElementById('contactForm').reset();
+        }, 1000); 
+    });

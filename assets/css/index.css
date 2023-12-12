@@ -155,4 +155,12 @@ body.dark-theme, header.dark-theme #theme-switcher {
       max-width: 500px;
       margin: 0 auto; 
   }
+  
+  .carousel-control-prev-icon::before,
+  .carousel-control-next-icon::before {
+      color: #ff0000 !important;
+  }
+
+
+  
     
