@@ -59,11 +59,24 @@ font-weight: bold;
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    margin: auto;
     padding: 1rem 0;
     background: #333;
     color: #fff;
 }
+@media (max-width: 991px) {
+  footer{
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  }
+}
+
 .skillLogo{
     width: 50px;
 }
