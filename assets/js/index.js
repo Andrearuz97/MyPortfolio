@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Attiva/Disattiva il tema scuro per il footer
         document.querySelector('footer').classList.toggle('dark-theme');
+
+        var moonIcon = this.querySelector('.fa-moon');
+        var sunIcon = this.querySelector('.fa-sun');
+        moonIcon.style.display = moonIcon.style.display === 'none' ? 'block' : 'none';
+        sunIcon.style.display = sunIcon.style.display === 'none' ? 'block' : 'none';
     });
 });
 

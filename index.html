@@ -21,30 +21,48 @@
             </a>
         </div>
             <!-- Bottone per il menu a tendina su schermi piccoli -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Contenuto della Navbar -->
-            <div class="collapse navbar-collapse" id="navbarContent">
-                <div class="navbar-nav me-auto">
-                    <!-- Link ai Social e Bottone Download CV -->
-                    <a href="https://www.linkedin.com/in/andrea-ruzittu-575633262/" class="nav-link" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
-                    <a href="https://github.com/Andrearuz97" class="nav-link" target="_blank"><i class="fab fa-github fa-lg"></i></a>
-                    <a href="https://www.facebook.com/andrea.ruzittu.9/" class="nav-link" target="_blank"><i class="fa-brands fa-facebook fa-lg"></i></a>
-                    <a href="https://www.instagram.com/andrea_ruzittu/" class="nav-link" target="_blank"><i class="fa-brands fa-instagram fa-lg"></i></a>
-                    <a href="https://twitter.com/Andrea_ruz97" class="nav-link" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
-                    <a href="assets/file/CV Andrea Ruzittu 2023.pdf" class="nav-link" target="_blank" title="Download cv" ><i class="fa-solid fa-download fa-lg"></i></a>
-                </div>
-                <div class="ms-auto d-flex align-items-center">
-                    <!-- Selettore Lingua e Cambio Tema -->
-                    <select class="form-select me-2" id="language-switcher">
-                        <option value="it">IT</option>
-                        <option value="en">EN</option>
-                    </select>
-                    <button id="theme-switcher" class="btn"><i class="fa-regular fa-moon"></i></button>
-                </div>
-            </div>
+            <!-- Bottone per il menu a tendina su schermi piccoli -->
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+<!-- Contenuto della Navbar -->
+<div class="collapse navbar-collapse" id="navbarContent">
+    <div class="navbar-nav me-auto">
+        <!-- Link ai Social con etichette di testo -->
+        <a href="https://www.linkedin.com/in/andrea-ruzittu-575633262/" class="nav-link" target="_blank">
+            <i class="fab fa-linkedin fa-lg"></i> <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/Andrearuz97" class="nav-link" target="_blank">
+            <i class="fab fa-github fa-lg"></i> <span>GitHub</span> 
+        </a>
+        <a href="https://www.facebook.com/andrea.ruzittu.9/" class="nav-link" target="_blank">
+            <i class="fa-brands fa-facebook fa-lg"></i> <span>Facebook</span>
+        </a>
+        <a href="https://www.instagram.com/andrea_ruzittu/" class="nav-link" target="_blank">
+            <i class="fa-brands fa-instagram fa-lg"></i> <span>Instagram</span>
+        </a>
+        <a href="https://twitter.com/Andrea_ruz97" class="nav-link" target="_blank">
+            <i class="fa-brands fa-twitter fa-lg"></i> <span>Twitter</span>
+        </a>
+        <a href="assets/file/CV Andrea Ruzittu 2023.pdf" class="nav-link" target="_blank" title="Download cv">
+            <i class="fa-solid fa-download fa-lg"></i> <span>Scarica CV</span>
+        </a>
+    </div>
+    <div class="ms-auto d-flex align-items-center">
+        <!-- Selettore Lingua e Cambio Tema -->
+        <select class="form-select me-2" id="language-switcher">
+            <option value="it">IT</option>
+            <option value="en">EN</option>
+        </select>
+        <button id="theme-switcher" class="btn">
+            <i class="fa-regular fa-moon"></i> <!-- Icona Luna -->
+            <i class="fa-regular fa-sun" style="display:none;"></i> <!-- Icona Sole -->
+        </button>
+        
+    </div>
+</div>
+
         </nav>
     </header>
     
