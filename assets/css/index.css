@@ -106,8 +106,10 @@ footer {
 }
 
 #theme-switcher{
-    background-color: white;
+    background-color: #323232;
+    color: white;
 }
+
 
 body.dark-theme, header.dark-theme  {
     background-color: #6b6969;
@@ -117,7 +119,7 @@ body.dark-theme, header.dark-theme  {
       background-size: cover; 
       
     .navbar, footer, i, #theme-switcher{
-      background-color:#6b6969 !important;
+      background-color:#323232 !important;
       color: white !important;
     }
     
