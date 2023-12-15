@@ -50,6 +50,9 @@ body {
         #navbarContent .nav-link:active {
           background-color: rgb(199, 194, 194);
 }
+span{
+  color: white;
+}
 }
 #language-switcher:focus{
   box-shadow: none !important;
@@ -116,8 +119,7 @@ body.dark-theme, header.dark-theme  {
     color:white;
     background-image: url(../img/bg_dark.avif);
     background-position: center;
-      background-size: cover; 
-      
+    background-size: cover; 
     .navbar, footer, i, #theme-switcher{
       background-color:#323232 !important;
       color: white !important;
