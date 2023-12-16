@@ -96,7 +96,7 @@ function changeLanguage(language) {
           'title': `Hello, i'm Andrea Ruzittu`,
           'aboutMe': `Hi, I'm Andrea. After a degree in Economics, I started working in the administration of a hotel chain, acquiring skills in management and customer service. My passion for technology then led me to attend a programming bootcamp, where I specialized in Full Stack web development. Today, I integrate my understanding of business with the technical skills to develop innovative web solutions, always with an eye on continuous learning and collaboration.`,
           'fullStack': 'FULL-STACK DEVELOPER',
-          'ab':`about me...`,
+          'ab':`About me...`,
           'progetti':`Projects`,
           'contattami':`Contact me`,
           'skills':`Skills`,
