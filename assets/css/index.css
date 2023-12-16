@@ -125,7 +125,15 @@ body.dark-theme, header.dark-theme  {
     span{
       color: white;
     }
+    .navbar-toggler-icon{
+      color: white !important;
+    }
     
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
 .skill-item{
     transition: ease 0.7s;
