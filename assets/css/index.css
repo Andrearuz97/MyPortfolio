@@ -118,6 +118,9 @@ body.dark-theme, header.dark-theme  {
     background-image: url(../img/bg_dark.avif);
     background-position: center;
     background-size: cover; 
+    header a i :hover{
+      color: green !important;
+    }
     .navbar, footer, i, #theme-switcher{
       background-color:#323232 !important;
       color: white !important;
@@ -201,10 +204,13 @@ body.dark-theme, header.dark-theme  {
       margin: 0 auto; 
   }
   
-  .carousel-control-prev-icon::before,
-  .carousel-control-next-icon::before {
-      color: #ff0000 !important;
-  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(31%) sepia(94%) saturate(7486%) hue-rotate(356deg) brightness(103%) contrast(101%);
+    font-weight: bold;
+}
+
+  
   form input:focus, form textarea:focus{
     border: green 1px double !important;
     box-shadow: none !important;
