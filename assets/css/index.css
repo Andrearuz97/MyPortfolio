@@ -112,19 +112,24 @@ footer {
 }
 
 
+
 body.dark-theme, header.dark-theme  {
     background-color: #6b6969;
     color:white;
     background-image: url(../img/bg_dark.avif);
     background-position: center;
     background-size: cover; 
-    header a i :hover{
-      color: green !important;
-    }
+
+    i:hover {
+      color: purple !important; 
+  }
+ 
+  
     .navbar, footer, i, #theme-switcher{
       background-color:#323232 !important;
       color: white !important;
     }
+
     span{
       color: white;
     }
@@ -193,7 +198,9 @@ body.dark-theme, header.dark-theme  {
         color: green;
       }
 }
-  
+  .card-body{
+    background-color: #eeeeee;
+  }
     .card-img-top {
         height: 400px;
         object-fit: cover; 
@@ -205,7 +212,7 @@ body.dark-theme, header.dark-theme  {
   }
   
   .carousel-control-prev-icon,
-.carousel-control-next-icon {
+  .carousel-control-next-icon {
     filter: invert(31%) sepia(94%) saturate(7486%) hue-rotate(356deg) brightness(103%) contrast(101%);
     font-weight: bold;
 }
