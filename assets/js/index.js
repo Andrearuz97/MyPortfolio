@@ -112,7 +112,7 @@ function changeLanguage(language) {
 // Anno aggiornato in tempo reale
     var anno= document.getElementById("anno");
     var data = new Date().getFullYear();
-    anno.innerHTML = data
+    anno.innerHTML=data
 
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       setTimeout(function() {

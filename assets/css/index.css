@@ -19,9 +19,7 @@ body {
     color: black;
     transition: ease-in-out 1s
     }
-    span{
-      display: none;
-    }
+    
 
     #navbarContent a:hover{
         transform: scale(1.4);
