@@ -22,7 +22,7 @@ body {
     
 
     #navbarContent a:hover{
-        transform: scale(1.4);
+        /*transform: scale(1.4);*/
         transition: ease-in-out 0.8s;
         color: blue;
     }
