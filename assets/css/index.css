@@ -48,7 +48,9 @@ nav {
   #navbarContent a:active {
     color: blue;
   }
-
+  #navbarContent .nav-link:active {
+    background-color: rgb(199, 194, 194);
+  }
   #navbarContent .nav-link {
     display: flex;
     align-items: center;
@@ -58,9 +60,6 @@ nav {
     margin-bottom: 0.5rem;
   }
 
-  #navbarContent .nav-link:active {
-    background-color: rgb(199, 194, 194);
-  }
 }
 
 #language-switcher:focus {
@@ -113,6 +112,23 @@ footer {
     transition: ease 1s;
     color: green;
   }
+  .btn.btn-success {
+  background-color: green;
+  border: none;
+}
+
+.btn.btn-success:hover {
+  background-color: rgb(1, 173, 1);
+}
+
+.btn.btn-warning {
+  background-color: rgb(207, 207, 3);
+  border: none;
+}
+
+.btn.btn-warning:hover {
+  background-color: rgb(243, 243, 0);
+}
 }
 
 @media (max-width: 992px) {
@@ -155,6 +171,10 @@ footer {
 #theme-switcher {
   background-color: #323232;
   color: white;
+ 
+}
+#theme-switcher .fa-solid{
+ font-size: 2rem;
 }
 
 .navbar-toggler:focus {
@@ -198,21 +218,25 @@ footer {
   max-width: 500px;
   margin: 0 auto;
 }
+/*Impostazioni Carosello!!*/
+.carousel-control-prev i, .carousel-control-next i {
+  color: #312e2e; 
+  font-size: 40px; 
+}
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  filter: invert(31%) sepia(94%) saturate(7486%) hue-rotate(356deg) brightness(103%) contrast(101%);
-  font-weight: bold;
+.carousel-control-prev:hover i, .carousel-control-next:hover i {
+  color: #000000; 
 }
 .formNames{
   font-weight: bold;
 }
 .form-control{
-  background-color: #dbdada !important;
   outline: none !important;
   border: none !important;
   box-shadow: none !important;
 }
+
+
 
 /* Dark Mode specific styles */
 body.dark-theme,
@@ -224,9 +248,51 @@ header.dark-theme {
   background-size: cover;
   transition: ease 1s;
 
+  .carousel-control-prev i, .carousel-control-next i {
+    color: green;
+    font-size: 40px; 
+    background: none !important;
+  }
+  
+  .carousel-control-prev:hover i, .carousel-control-next:hover i {
+    color: #ffffff; 
+  }
   .nav-link:hover, .nav-link:hover i {
     color: purple !important;
   }
+  .form-control{
+    background-color: #dbdada !important;
+
+  }
+  
+  #language-switcher{
+    background-color: #dbdada;
+    }
+    .navbar, footer, i, a {
+      background-color: #323232;
+      color: white;
+    }
+  
+    span {
+      color: white;
+    }
+    .btn.btn-success {
+      background-color: green;
+      border: none;
+    }
+  
+    .btn.btn-success:hover {
+      color: black;
+    }
+  
+    .btn.btn-warning {
+      background-color: rgb(149, 149, 0);
+      border: none;
+    }
+  
+    .btn.btn-warning:hover {
+      color: black;
+    }
   @media (min-width: 991px) {
     #navbarContent a,i  {
       color: white;
@@ -240,35 +306,28 @@ header.dark-theme {
   }
   
 
-  .navbar, footer, i, a, #theme-switcher {
-    background-color: #323232;
-    color: white;
-  }
-
-  span {
-    color: white;
-  }
-
-  .navbar-toggler-icon {
-    color: white;
-  }
-
-  .btn.btn-success {
-    background-color: green;
-    border: none;
-  }
-
-  .btn.btn-success:hover {
-    color: black;
-  }
-
-  .btn.btn-warning {
-    background-color: rgb(149, 149, 0);
-    border: none;
-  }
-
-  .btn.btn-warning:hover {
-    color: black;
-  }
   
+
+  
+  @media (max-width: 992px){
+    button.navbar-toggler{
+      color:rgb(137, 133, 133);
+      border:solid 1px;
+    }
+    #navbarContent a {
+      font-size: 1.5rem;
+      color: white;
+    }
+  
+    #navbarContent a:active {
+      color: purple;
+    }
+    #navbarContent .nav-link:active {
+      background-color: rgb(59, 59, 59);
+    }
+    #theme-switcher {
+      color: rgb(137, 133, 133);
+      
+    }
+  }
 }
