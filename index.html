@@ -18,7 +18,7 @@
   <body>
     <header>
       <!-- Navbar di Bootstrap -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-2">
+      <nav class="navbar navbar-expand-lg p-2">
         <!-- Logo del Portfolio -->
         <div>
           <a class="navbar" href="#">
@@ -47,49 +47,23 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <div class="navbar-nav me-auto">
             <!-- Link ai Social con etichette di testo -->
-            <a
-              href="https://www.linkedin.com/in/andrea-ruzittu-575633262/"
-              class="nav-link"
-              target="_blank"
-            >
-              <i class="fab fa-linkedin fa-lg"></i> <span>LinkedIn</span>
+            <a class="nav-link" href="https://www.linkedin.com/in/andrea-ruzittu-575633262/" target="_blank">
+              <i class="fab fa-linkedin fa-lg"></i> LinkedIn
             </a>
-            <a
-              href="https://github.com/Andrearuz97"
-              class="nav-link"
-              target="_blank"
-            >
-              <i class="fab fa-github fa-lg"></i> <span>GitHub</span>
+            <a class="nav-link" href="https://github.com/Andrearuz97" target="_blank">
+              <i class="fab fa-github fa-lg"></i> GitHub
             </a>
-            <a
-              href="https://www.facebook.com/andrea.ruzittu.9/"
-              class="nav-link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-facebook fa-lg"></i> <span>Facebook</span>
+            <a class="nav-link" href="https://www.facebook.com/andrea.ruzittu.9/" target="_blank">
+              <i class="fa-brands fa-facebook fa-lg"></i> Facebook
             </a>
-            <a
-              href="https://www.instagram.com/andrea_ruzittu/"
-              class="nav-link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-instagram fa-lg"></i>
-              <span>Instagram</span>
+            <a class="nav-link" href="https://www.instagram.com/andrea_ruzittu/" target="_blank">
+              <i class="fa-brands fa-instagram fa-lg"></i> Instagram
             </a>
-            <a
-              href="https://twitter.com/Andrea_ruz97"
-              class="nav-link"
-              target="_blank"
-            >
-              <i class="fa-brands fa-x-twitter fa-lg"></i> <span>Twitter</span>
+            <a class="nav-link" href="https://twitter.com/Andrea_ruz97" target="_blank">
+              <i class="fa-brands fa-twitter fa-lg"></i> Twitter
             </a>
-            <a
-              href="assets/file/Andrea Ruzittu CV 2024.pdf"
-              class="nav-link"
-              target="_blank"
-              title="Download cv"
-            >
-              <i class="fa-solid fa-download fa-lg"></i> <span>Scarica CV</span>
+            <a class="nav-link" href="assets/file/Andrea Ruzittu CV 2024.pdf" target="_blank" title="Download cv">
+              <i class="fa-solid fa-download fa-lg"></i> Scarica CV
             </a>
           </div>
           <div class="ms-auto d-flex align-items-center">
@@ -99,13 +73,12 @@
               <option value="en">EN</option>
             </select>
             <button id="theme-switcher" class="btn">
-              <i class="fa-solid fa-moon"></i>
-              <!-- Icona Luna -->
-              <i class="fa-solid fa-sun" style="display: none"></i>
-              <!-- Icona Sole -->
+              <i class="fa-solid fa-moon"></i> <!-- Icona Luna -->
+              <i class="fa-solid fa-sun" style="display: none"></i> <!-- Icona Sole -->
             </button>
           </div>
         </div>
+        
       </nav>
     </header>
 
@@ -432,7 +405,7 @@
         method="POST"
       >
         <div class="mb-3">
-          <label id="nomme" for="name" class="form-label">Nome</label>
+          <label class="formNames" for="name" class="form-label">Nome</label>
           <input
             type="text"
             class="form-control"
@@ -441,7 +414,7 @@
           />
         </div>
         <div class="mb-3">
-          <label id="formMail" for="email" class="form-label">Indirizzo Email</label>
+          <label class="formNames" for="email" class="form-label">Indirizzo Email</label>
           <input
             type="email"
             class="form-control"
@@ -451,7 +424,7 @@
           />
         </div>
         <div class="mb-3">
-          <label id="formMessage" for="message" class="form-label">Messaggio</label>
+          <label class="formNames" for="message" class="form-label">Messaggio</label>
           <textarea
             class="form-control"
             id="message"

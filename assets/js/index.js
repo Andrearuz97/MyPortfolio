@@ -113,7 +113,7 @@ function changeLanguage(language) {
     var anno= document.getElementById("anno");
     var data = new Date().getFullYear();
     anno.innerHTML=data
-
+//Reset del form dopo invio!
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       setTimeout(function() {
           document.getElementById('contactForm').reset();

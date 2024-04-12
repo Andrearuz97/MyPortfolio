@@ -1,227 +1,274 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif !important;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
-    background: linear-gradient(rgba(244, 244, 244, 0.5), rgba(244, 244, 244, 0.5)), 
-    url('../img/background\ portfolio.avif');
-    background-position: center;
-    background-size: cover; 
-    
-}
-@media (min-width: 991px) {
-#navbarContent a{
-    font-size: 1.5rem;
-    color: black;
-    transition: ease-in-out 1s
-    }
-    
-
-    #navbarContent a:hover{
-        /*transform: scale(1.4);*/
-        transition: ease-in-out 0.8s;
-        color: blue;
-    }
-   
-}
-@media (max-width: 992px) {
-    #navbarContent a{
-        font-size: 1.5rem;
-        color: black;
-        }
-        #navbarContent a:active{
-           
-            color: blue;
-        }
-        #navbarContent .nav-link {
-          display: flex;
-          align-items: center;
-          gap: 12px;
-         border: 2px solid #8b8a8a;
-         padding-left: 0.5rem;
-         margin-bottom: 0.5rem;
-        }
-        #navbarContent .nav-link:active {
-          background-color: rgb(199, 194, 194);
+  font-family: 'Roboto', sans-serif !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f4f4f4;
+  background: linear-gradient(rgba(244, 244, 244, 0.5), rgba(244, 244, 244, 0.5)),
+    url('../img/bg_white_2.webp');
+  background-position: center;
+  background-size: cover;
 }
 
-}
-#language-switcher:focus{
-  box-shadow: none !important;
-  border: none !important;  
-  outline: 2px solid green !important;
+#aboutMe {
+  font-weight: bold;
 }
 
 section {
-    padding: 1rem 20px;
+  padding: 1rem 20px;
 }
-#aboutMe{
-font-weight: bold;
 
+nav {
+  background-color: #bbb9b9;
+}
+
+@media (min-width: 991px) {
+  #navbarContent a {
+    font-size: 1.2rem;
+    color: black;
+    transition: 1s ease-in-out;
+  }
+
+  #navbarContent a:hover,
+  #navbarContent a:hover i {
+    color: blue;
+    transition: 1s ease-in-out;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbarContent a {
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  #navbarContent a:active {
+    color: blue;
+  }
+
+  #navbarContent .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 2px solid #8b8a8a;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #navbarContent .nav-link:active {
+    background-color: rgb(199, 194, 194);
+  }
+}
+
+#language-switcher:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: 2px solid #bbb9b9 !important;
 }
 
 .project {
-    background: #fff;
-    margin: 1rem 0;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    text-align: justify;
-    margin: auto;
-    padding: 1rem 0;
-    background: #333;
-    color: #fff;
-}
-@media (max-width: 991px) {
-  footer{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: justify;
   margin: auto;
   padding: 1rem 0;
-  background: #333;
-  color: #fff;
+  background-color: #bbb9b9;
+  color: black;
+}
+
+@media (max-width: 991px) {
+  footer {
+    text-align: center;
+    margin: auto;
+    padding: 1rem 0;
+    background-color: #bbb9b9;
+    color: black;
   }
 }
 
-.skillLogo{
-    width: 50px;
-}
-#profilePic{
-    width: 200px;
-    border-radius: 50%;
-    border: 2px black solid;
-}
-#logo{
-    width: 100px;
-    border-radius: 50%;
-    padding-right: 1rem;
+.contatti a {
+  color: black;
+  text-decoration: none;
 }
 
-#theme-switcher{
-    background-color: #323232;
-    color: white;
-}
-
-
-
-body.dark-theme, header.dark-theme  {
-    background-color: #6b6969;
-    color:white;
-    background-image: url(../img/bg_dark.avif);
-    background-position: center;
-    background-size: cover; 
-
-    i:hover {
-      color: purple !important; 
+@media (min-width: 991px) {
+  .contatti i {
+    font-size: 1.3rem;
+    margin-right: 0.2rem;
+    transition: ease 1s;
   }
- 
-  
-    .navbar, footer, i, #theme-switcher{
-      background-color:#323232 !important;
-      color: white !important;
-    }
 
-    span{
-      color: white;
-    }
-    .navbar-toggler-icon{
-      color: white !important;
-    }
-    
+  .contatti i:hover {
+    transform: scale(1.4);
+    transition: ease 1s;
+    color: green;
+  }
+}
+
+@media (max-width: 992px) {
+  .contatti i {
+    font-size: 1.3rem;
+    margin-right: 0.2rem;
+  }
+
+  .contatti i:active {
+    color: green;
+  }
+}
+
+.skillLogo {
+  width: 50px;
+}
+
+.skill-item {
+  transition: ease 0.7s;
+}
+
+.skill-item:hover {
+  transform: scale(1.5);
+  transition: ease 0.7s;
+  color: red;
+}
+
+#profilePic {
+  width: 200px;
+  border-radius: 50%;
+  border: 2px black solid;
+}
+
+#logo {
+  width: 100px;
+  border-radius: 50%;
+  padding-right: 1rem;
+}
+
+#theme-switcher {
+  background-color: #323232;
+  color: white;
 }
 
 .navbar-toggler:focus {
   outline: none !important;
   box-shadow: none !important;
 }
-.skill-item{
-    transition: ease 0.7s;
 
-}
-.skill-item:hover {
-    transform: scale(1.5) rotate(360deg);
-    transition: ease 0.7s;
-    color: red;
-}
 @keyframes gyroRotateX {
-    0% {
-      transform: rotatey(0deg);
-    }
-    50% {
-      transform: rotatey(180deg);
-    }
-    100% {
-      transform: rotatey(360deg);
-    }
+  0% {
+    transform: rotatey(0deg);
   }
-  
-  
-  #fullStack {
-    display: inline-block; 
-    animation: gyroRotateX 10s linear infinite;
-    transform-style: preserve-3d;
-    perspective: 500px; 
-    color: purple;  }
-  
-  
-  .contatti a{
-    color: white;
-    text-decoration: none;
+
+  50% {
+    transform: rotatey(180deg);
+  }
+
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+
+#fullStack {
+  display: inline-block;
+  animation: gyroRotateX 10s linear infinite;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  color: purple;
+}
+
+.card-body {
+  background-color: #eeeeee;
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(31%) sepia(94%) saturate(7486%) hue-rotate(356deg) brightness(103%) contrast(101%);
+  font-weight: bold;
+}
+.formNames{
+  font-weight: bold;
+}
+.form-control{
+  background-color: #dbdada !important;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Dark Mode specific styles */
+body.dark-theme,
+header.dark-theme {
+  background-color: #6b6969;
+  color: white;
+  background-image: url(../img/bg_dark_2.webp);
+  background-position: center;
+  background-size: cover;
+  transition: ease 1s;
+
+  .nav-link:hover, .nav-link:hover i {
+    color: purple !important;
   }
   @media (min-width: 991px) {
-  .contatti i{
-    font-size: 1.3rem;
-    margin-right: 0.2rem;
-    transition: ease 1s;
-  }
-  .contatti i:hover{
-    transform: scale(1.4);
-    transition: ease 1s;
-    color: green;
-  }
-}
-@media (max-width: 992px) {
-    .contatti i{
-        font-size: 1.3rem;
-        margin-right: 0.2rem;
-      }
-      .contatti i:active{
-        color: green;
-      }
-}
-  .card-body{
-    background-color: #eeeeee;
-  }
-    .card-img-top {
-        height: 400px;
-        object-fit: cover; 
-        object-position: center; 
+    #navbarContent a,i  {
+      color: white;
+      transition: 1s ease-in-out;
+      
     }
-    .card {
-      max-width: 500px;
-      margin: 0 auto; 
+    #navbarContent:hover  {
+      transition:  1s ease-in-out;
+      
+    }
   }
   
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    filter: invert(31%) sepia(94%) saturate(7486%) hue-rotate(356deg) brightness(103%) contrast(101%);
-    font-weight: bold;
+
+  .navbar, footer, i, a, #theme-switcher {
+    background-color: #323232;
+    color: white;
+  }
+
+  span {
+    color: white;
+  }
+
+  .navbar-toggler-icon {
+    color: white;
+  }
+
+  .btn.btn-success {
+    background-color: green;
+    border: none;
+  }
+
+  .btn.btn-success:hover {
+    color: black;
+  }
+
+  .btn.btn-warning {
+    background-color: rgb(149, 149, 0);
+    border: none;
+  }
+
+  .btn.btn-warning:hover {
+    color: black;
+  }
+  
 }
-
-  
-  form input:focus, form textarea:focus{
-    border: green 1px double !important;
-    box-shadow: none !important;
-    outline: green !important;
-  }
-
-
-  
-    
