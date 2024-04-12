@@ -89,7 +89,7 @@ function changeLanguage(language) {
           'formMessage':`Messaggio`,
           'nomme':`Nome`,
           'formSend':`Inviami un messaggio`,
-          'view':`Visualsji`
+          'view':`Visualizza progetto`
           
         },
         en: {
@@ -103,7 +103,8 @@ function changeLanguage(language) {
           'formMail':`Email address`,
           'formMessage':`Message`,
           'nomme':`Name`,
-          'formSend':`Send me a message`
+          'formSend':`Send me a message`,
+          'view':`View project`
 
         }
       };

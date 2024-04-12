@@ -100,7 +100,7 @@
       <div class="row d-flex justify-content-between text-center">
         <!-- Sezione "Chi Sono" -->
         <div class="col-md-6">
-          <h2>About Me</h2>
+          <h2 id="ab">About Me</h2>
           <p id="aboutMe">
             Ciao, sono Andrea. Dopo una laurea in Economia, ho iniziato a
             lavorare nell'amministrazione di una catena alberghiera, acquisendo
@@ -265,7 +265,7 @@
                     <a 
                       href="https://youtu.be/p28tBHYAr58?si=YxAASWc2p-5tnXDg"
                       target="_blank"
-                      class="btn btn-success" 
+                      class="btn btn-success" id="view"
                       >Visualizza Demo</a
                     >
                     <a
@@ -396,7 +396,7 @@
         method="POST"
       >
         <div class="mb-3">
-          <label class="formNames" for="name" class="form-label">Nome</label>
+          <label id="nomme" class="formNames" for="name" class="form-label">Nome</label>
           <input
             type="text"
             class="form-control"
@@ -405,7 +405,7 @@
           />
         </div>
         <div class="mb-3">
-          <label class="formNames" for="email" class="form-label">Indirizzo Email</label>
+          <label id="formMail" class="formNames" for="email" class="form-label">Indirizzo Email</label>
           <input
             type="email"
             class="form-control"
@@ -415,7 +415,7 @@
           />
         </div>
         <div class="mb-3">
-          <label class="formNames" for="message" class="form-label">Messaggio</label>
+          <label id="formMessage" class="formNames" for="message" class="form-label">Messaggio</label>
           <textarea
             class="form-control"
             id="message"
@@ -475,7 +475,7 @@
           </a>
         </p>
         <p>
-          © <span id="anno"></span> Andrea Ruzittu. Tutti i diritti riservati.
+          <i class="fa-regular fa-copyright"></i><span id="anno"></span> Andrea Ruzittu. Tutti i diritti riservati.
         </p>
       </section>
     </footer>
